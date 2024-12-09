@@ -2,7 +2,7 @@
 
 # 背景
 
-在 [bloom-generate]() 中能够看到，目前 `bloom-generate` 工具无法识别 openEuler，所以需要对其进行适配。
+在 [bloom-generate](https://github.com/Sebastianhayashi/Jazzy-euler/blob/main/Bloom_tool_research.md) 中能够看到，目前 `bloom-generate` 工具无法识别 openEuler，所以需要对其进行适配。
 
 # rosdep
 
