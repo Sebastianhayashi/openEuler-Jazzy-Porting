@@ -6,11 +6,11 @@
 
 # rosdep
 
-根据 rosdep-oe 中的内容已经确定了 rosdep-oe 可以使用，但是在实际安装 bloom 的时候会因为依赖关系直接下载最新的 rosdep 导致移植版（rosdep-oe）被覆盖过去，于是设计了以下思路运行了 bloom-generate。
+根据 `rosdep-oe` 中的内容已经确定了 `rosdep-oe` 可以使用，但是在实际安装 `bloom` 的时候会因为依赖关系直接下载最新的 `rosdep` 导致移植版（rosdep-oe）被覆盖过去，于是设计了以下思路运行了 `bloom-generate`。
 
 ## 编译
 
-bloom、rosdep 以及 rosdistro 从源码编译，因为需要修改其依赖关系，修改好的仓库如下：
+`bloom`、`rosdep` 以及 `rosdistro` 从源码编译，因为需要修改其依赖关系，修改好的仓库如下：
 
 - [bloom](https://github.com/Sebastianhayashi/bloom-oe)
 - [rosdep](https://github.com/Grvzard/rosdep-oe)
@@ -18,19 +18,19 @@ bloom、rosdep 以及 rosdistro 从源码编译，因为需要修改其依赖关
 
 编译过程：
 
-```jsx
+```bash
 // build rosdep-oe from source
 git clone https://github.com/Grvzard/rosdep-oe
 cd rosdep-oe
 pip install .
 
 // build rosdistro from source
-git clone [https://github.com/Sebastianhayashi/rosdistro-oe.git](https://github.com/Sebastianhayashi/rosdistro-oe.git)
+git clone https://github.com/Sebastianhayashi/rosdistro-oe.git
 cd rosdistro-oe
 pip install .
 
 // build bloom from source
-git clone [https://github.com/Sebastianhayashi/bloom-oe](https://github.com/Sebastianhayashi/bloom-oe)
+git clone https://github.com/Sebastianhayashi/bloom-oe
 cd bloom-pe
 pip -r install requirements.txt
 pip install --no-deps .
