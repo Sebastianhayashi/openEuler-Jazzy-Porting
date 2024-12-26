@@ -1,18 +1,174 @@
-# Jazzy-euler
+# euler-jazzy packages support
 
-该仓库旨在调研将 Jazzy 移植到 openEuler 上。
+| 包名称                                                 | 版本               | 仓库               |
+|------------------------------------------------------|--------------------|--------------------|
+| ros-jazzy-action-msgs.x86_64                          | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-actionlib-msgs.x86_64                       | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-clang-format.x86_64                   | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-clang-tidy.x86_64                     | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake.x86_64                          | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-auto.x86_64                     | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-clang-format.x86_64             | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-clang-tidy.x86_64               | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-copyright.x86_64                | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-core.x86_64                     | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-cppcheck.x86_64                 | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-cpplint.x86_64                  | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-export-definitions.x86_64       | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-export-dependencies.x86_64      | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-export-include-directories.x86_64| 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-export-interfaces.x86_64        | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-export-libraries.x86_64         | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-export-link-flags.x86_64        | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-export-targets.x86_64           | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-flake8.x86_64                    | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-gen-version-h.x86_64             | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-gmock.x86_64                     | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-google-benchmark.x86_64          | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-gtest.x86_64                     | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-include-directories.x86_64        | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-libraries.x86_64                  | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-lint-cmake.x86_64                 | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-mypy.x86_64                       | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-pclint.x86_64                     | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-pep257.x86_64                     | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-pycodestyle.x86_64                | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-pyflakes.x86_64                   | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-pytest.x86_64                     | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-python.x86_64                     | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-ros.x86_64                        | 0.13.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-target-dependencies.x86_64        | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-test.x86_64                       | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-uncrustify.x86_64                 | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-vendor-package.x86_64             | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-version.x86_64                    | 2.5.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-cmake-xmllint.x86_64                    | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-copyright.x86_64                        | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cppcheck.x86_64                         | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-cpplint.x86_64                          | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-flake8.x86_64                           | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-index-cpp.x86_64                        | 1.8.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-index-python.x86_64                     | 1.8.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ament-lint.x86_64                             | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-lint-auto.x86_64                        | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-lint-cmake.x86_64                       | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-lint-common.x86_64                      | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-mypy.x86_64                             | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-package.x86_64                          | 0.16.3-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-pclint.x86_64                           | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-pep257.x86_64                           | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-pycodestyle.x86_64                      | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-pyflakes.x86_64                         | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-uncrustify.x86_64                       | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-ament-xmllint.x86_64                          | 0.17.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-builtin-interfaces.x86_64                     | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-common-interfaces.x86_64                      | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-composition-interfaces.x86_64                 | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-diagnostic-msgs.x86_64                        | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-domain-coordinator.x86_64                     | 0.13.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-dynamixel-workbench-msgs.x86_64               | 2.0.3-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-fastcdr.x86_64                                | 2.2.6-1.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-fastrtps.x86_64                               | 2.2.6-1.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-fastrtps-cmake-module.x86_64                  | 3.6.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-fuse-doc.x86_64                               | 1.1.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-geometry-msgs.x86_64                          | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-geometry-tutorials.x86_64                     | 0.5.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-gmock-vendor.x86_64                           | 1.14.9000-0.oe2403 | @openEuler-Jazzy   |
+| ros-jazzy-google-benchmark-vendor.x86_64                | 0.5.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-grid-map-cmake-helpers.x86_64                 | 2.2.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-gtest-vendor.x86_64                           | 1.15.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-hri-msgs.x86_64                               | 2.2.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-keyboard-handler.x86_64                       | 0.3.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-kobuki-firmware.x86_64                        | 1.2.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-launch.x86_64                                 | 3.4.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-launch-pytest.x86_64                          | 3.4.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-launch-testing.x86_64                         | 3.4.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-launch-testing-ament-cmake.x86_64             | 3.4.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-launch-xml.x86_64                             | 3.4.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-launch-yaml.x86_64                            | 3.4.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-libyaml-vendor.x86_64                         | 1.6.3-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-lifecycle-msgs.x86_64                         | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-map-msgs.x86_64                               | 2.4.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-marker-msgs.x86_64                            | 0.0.8-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-mimick-vendor.x86_64                          | 0.6.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-nav-msgs.x86_64                               | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-nmea-msgs.x86_64                              | 2.1.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-osrf-pycommon.x86_64                          | 2.1.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-osrf-testing-tools-cpp.x86_64                 | 2.0.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-performance-test-fixture.x86_64               | 0.2.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-px4-msgs.x86_64                               | 2.0.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-python-cmake-module.x86_64                    | 0.11.1-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-rcl-interfaces.x86_64                         | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rcl-logging-interface.x86_64                  | 3.1.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rcl-logging-noop.x86_64                       | 3.1.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rcl-logging-spdlog.x86_64                     | 3.1.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rcl-yaml-param-parser.x86_64                  | 9.2.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rcpputils.x86_64                              | 2.11.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-rcpputils-debuginfo.x86_64                    | 2.11.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-rcpputils-debugsource.x86_64                  | 2.11.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-rcutils.x86_64                                | 6.7.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rmf-cmake-uncrustify.x86_64                   | 1.2.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rmw.x86_64                                    | 7.3.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rmw-dds-common.x86_64                         | 3.1.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rmw-implementation-cmake.x86_64               | 7.3.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-robot-upstart.x86_64                          | 1.0.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ros-environment.x86_64                        | 4.2.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-ros2-control-test-assets.x86_64               | 4.22.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-rosgraph-msgs.x86_64                          | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-adapter.x86_64                         | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-cli.x86_64                             | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-cmake.x86_64                           | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-core-generators.x86_64                 | 0.2.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-core-runtime.x86_64                    | 0.2.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-default-generators.x86_64              | 1.6.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-default-runtime.x86_64                 | 1.6.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-dynamic-typesupport.x86_64             | 0.1.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-generator-c.x86_64                     | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-generator-cpp.x86_64                   | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-generator-py.x86_64                    | 0.22.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-generator-tests.x86_64                 | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-generator-type-description.x86_64      | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-parser.x86_64                          | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-pycommon.x86_64                        | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-runtime-c.x86_64                       | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-runtime-cpp.x86_64                     | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-c.x86_64                   | 3.2.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-cpp.x86_64                 | 3.2.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-fastrtps-c.x86_64          | 3.6.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-fastrtps-cpp.x86_64        | 3.6.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-interface.x86_64           | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-introspection-c.x86_64     | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-introspection-cpp.x86_64   | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rosidl-typesupport-introspection-tests.x86_64  | 4.6.4-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rpyutils.x86_64                               | 0.4.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-rttest.x86_64                                 | 0.17.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-sensor-msgs.x86_64                            | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-sensor-msgs-py.x86_64                         | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-service-msgs.x86_64                           | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-shape-msgs.x86_64                             | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-smclib.noarch                                 | 4.1.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-spdlog-vendor.x86_64                          | 1.6.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-statistics-msgs.x86_64                        | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-std-msgs.x86_64                               | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-std-srvs.x86_64                               | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-stereo-msgs.x86_64                            | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-test-interface-files.x86_64                   | 0.13.0-0.oe2403    | @openEuler-Jazzy   |
+| ros-jazzy-test-launch-testing.x86_64                    | 3.4.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-test-msgs.x86_64                              | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-test-osrf-testing-tools-cpp.x86_64            | 2.0.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-tracetools-image-pipeline.x86_64              | 5.0.6-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-tracetools-read.x86_64                        | 8.2.3-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-trajectory-msgs.x86_64                        | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-turtlebot3-applications-msgs.x86_64           | 2.0.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-turtlebot3-msgs.x86_64                        | 2.2.3-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-twist-mux-msgs.x86_64                         | 3.0.1-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-type-description-interfaces.x86_64            | 2.0.2-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-uncrustify-vendor.x86_64                      | 3.0.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-unique-identifier-msgs.x86_64                 | 2.5.0-0.oe2403     | @openEuler-Jazzy   |
+| ros-jazzy-visualization-msgs.x86_64                     | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
 
-## 目前工具依赖关系
+**成功安装的包总数：116**
 
-### 已移植
+成功构建数量：202
 
-`bloom-generate` -> https://github.com/Sebastianhayashi/bloom-oe
-
-- `rosdep` -> https://github.com/Grvzard/rosdep-oe.git
-- `rosdistro` -> https://github.com/Sebastianhayashi/rosdistro-oe.git
-
-## 目前进度
-
-~~要运行 `bloom-generate` 的前提是能够让 `rosdep` 识别并且部署相关环境，所以需要先从 `rosdep` 开始进行适配。~~
-
-已经成功让 `bloom-generate` 识别到 openEuler，下一步计划为尝试使用 bloom 工具在 openEuler 上打一个 Jazzy 的包。
+repo 链接：https://eulermaker.compass-ci.openeuler.openatom.cn/api/ems1/repositories/jazzy_ament_package/openEuler%3A24.03-LTS/x86_64/
