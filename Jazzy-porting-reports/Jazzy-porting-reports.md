@@ -29,8 +29,6 @@ dependencies = {
 
 使用拓扑排序（Topological Sorting）解析依赖图，确保能够按正确的顺序构建包。
 
-更详细的脚本说明，click here
-
 ### RPM 包构建流程
 
 这个过程中涉及两个脚本：`process_ros_packages.sh`, `batch_process_packages.sh`
