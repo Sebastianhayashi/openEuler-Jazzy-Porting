@@ -1,8 +1,8 @@
 # euler-jazzy packages support
 
-**成功安装的包总数：116**
+**成功安装的包总数：263**
 
-成功构建数量：202
+成功构建数量：344
 
 repo 链接：https://eulermaker.compass-ci.openeuler.openatom.cn/api/ems1/repositories/jazzy_ament_package/openEuler%3A24.03-LTS/x86_64/
 
@@ -173,3 +173,4 @@ repo 链接：https://eulermaker.compass-ci.openeuler.openatom.cn/api/ems1/repos
 | ros-jazzy-unique-identifier-msgs.x86_64                 | 2.5.0-0.oe2403     | @openEuler-Jazzy   |
 | ros-jazzy-visualization-msgs.x86_64                     | 5.3.5-0.oe2403     | @openEuler-Jazzy   |
 
+表格更新日期：12.26
